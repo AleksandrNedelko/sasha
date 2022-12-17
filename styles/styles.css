@@ -36,6 +36,15 @@ body {
   width: 1200px;
 }
 
+button {
+  font-family: inherit;
+  font-size: 20px;
+  line-height: 36px;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .navigation {
   background-color: #FFFFFF;
 }
