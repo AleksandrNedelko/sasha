@@ -152,6 +152,11 @@ button {
   color: #000000;
 }
 
+.inner-header-title {
+  font-size: 60px;
+  line-height: 78px;
+}
+
 .catalog-products {
   background-color: #82B3D3;
   background-image: url("../images/background-filter.jfif");
@@ -201,5 +206,87 @@ button {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-text-transform: uppercase;
+  text-transform: uppercase;
+}
+
+.select-control {
+  font-family: "PT-Sans", sans-serif;
+  font-size: 18px;
+}
+
+.product-card-title {
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.product-card-link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.product-card-price {
+  color: #000000;
+  font-weight: 400;
+}
+
+.product-card-button {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.detailed {
+  background-color: #756157;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.favourites {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.product-rating {
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.pagination-link {
+  font-size: 20px;
+  line-height: 36px;
+  font-weight: 700;
+  text-decoration: none;
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+.first-link {
+  color:#000000;
+  background-color: #F2F2F2;
+}
+
+.select-control {
+  font-size: 
+}
+
+.subscription_inner {
+  background-color: #FFFFFF;
+}
+
+.subscription_button {
+  background-color: #82B3D3;
+  color: #FFFFFF;
+}
+
+.title_inner {
+  color: #000000;
+}
+
+.description_inner {
+  color: #000000;
 }

@@ -138,15 +138,15 @@
                     <option value="premium class">Премиум класс</option>
                 </select>
                 <a class="button" href="#">
-                    <span class="visually-hidden">Показать карточками</span>
+                    <span class="visually_hidden">Показать карточками</span>
                 </a>
                 <a class="button" href="#">
-                    <span class="visually-hidden">Показать большими карточками</span>
+                    <span class="visually_hidden">Показать большими карточками</span>
                 </a>
                 <a class="button" href="#">
-                    <span class="visually-hidden">Показать списком</span>
+                    <span class="visually_hidden">Показать списком</span>
                 </a>
-
+ favourites
                 <!-- Карточка товара -->
                 <ul class="product-list">
                     <li class="product-card">
@@ -155,8 +155,8 @@
                             <h3 class="product-card-title">Amara Resort & Spa</h3>
                             <p class="product-card-type">Гостиница</p>
                             <b class="product-card-price">От 4000 ₽</b>
-                            <a class="product-card-button" href="#">Подробнее</a>
-                            <a class="product-card-button" href="#">В избранное</a>
+                            <a class="product-card-button detailed" href="#">Подробнее</a>
+                            <a class="product-card-button favourites" href="#">В избранное</a>
                             <span class="rating">
                                 <img class="star-rating" src="" alt="">
                                 <img class="star-rating" src="" alt="">
@@ -172,8 +172,8 @@
                             <h3 class="product-card-title">Villas at Poco Diablo</h3>
                             <p class="product-card-type">Гостиница</p>
                             <b class="product-card-price">От 5000 ₽</b>
-                            <a class="product-card-button" href="#">Подробнее</a>
-                            <a class="product-card-button" href="#">В избранное</a>
+                            <a class="product-card-button detailed" href="#">Подробнее</a>
+                            <a class="product-card-button favourites" href="#">В избранное</a>
                             <span class="rating">
                                 <img class="star-rating" src="" alt="">
                                 <img class="star-rating" src="" alt="">
@@ -189,8 +189,8 @@
                             <h3 class="product-card-title">Desert Quail Inn</h3>
                             <p class="product-card-type">Гостиница</p>
                             <b class="product-card-price">От 2500 ₽</b>
-                            <a class="product-card-button" href="#">Подробнее</a>
-                            <a class="product-card-button" href="#">В избранное</a>
+                            <a class="product-card-button detailed" href="#">Подробнее</a>
+                            <a class="product-card-button favourites" href="#">В избранное</a>
                             <span class="rating">
                                 <img class="star-rating" src="" alt="">
                                 <img class="star-rating" src="" alt="">
@@ -205,8 +205,8 @@
                             <h3 class="product-card-title">GreenTree Inn</h3>
                             <p class="product-card-type">Гостиница</p>
                             <b class="product-card-price">От 1500 ₽</b>
-                            <a class="product-card-button" href="#">Подробнее</a>
-                            <a class="product-card-button" href="#">В избранное</a>
+                            <a class="product-card-button detailed" href="#">Подробнее</a>
+                            <a class="product-card-button favourites" href="#">В избранное</a>
                             <span class="rating">
                                 <img class="star-rating" src="" alt="">
                                 <img class="star-rating" src="" alt="">
@@ -216,26 +216,28 @@
                     </li>
                 </ul>
                 <!-- Пагинация -->
-                <ul class="pagination">
-                    <li class="paginaton-item">
-                        <a class="pagination-link" href="#">1</a>
-                    </li>
-                    <li class="paginaton-item">
-                        <a class="pagination-link" href="#">2</a>
-                    </li>
-                    <li class="paginaton-item">
-                        <a class="pagination-link" href="#">3</a>
-                    </li>
-                    <li class="paginaton-item">
-                        <a class="pagination-link" href="#">4</a>
-                    </li>
-                    <li class="paginaton-item">
-                        <a class="pagination-link" href="#">...</a>
-                    </li>
-                    <li class="paginaton-item">
-                        <a class="pagination-link" href="#">10</a>
-                    </li>
-                </ul>
+                <dev class="pagination-block">
+                    <ul class="pagination">
+                        <li class="paginaton-item">
+                            <a class="pagination-link first-link" href="#">1</a>
+                        </li>
+                        <li class="paginaton-item">
+                            <a class="pagination-link" href="#">2</a>
+                        </li>
+                        <li class="paginaton-item">
+                            <a class="pagination-link" href="#">3</a>
+                        </li>
+                        <li class="paginaton-item">
+                            <a class="pagination-link" href="#">4</a>
+                        </li>
+                        <li class="paginaton-item">
+                            <a class="pagination-link" href="#">...</a>
+                        </li>
+                        <li class="paginaton-item">
+                            <a class="pagination-link" href="#">10</a>
+                        </li>
+                    </ul>
+                </dev>
             </section>
             <span class="number-of-cards">
                 <p>Гостиниц на странице:</p>
@@ -249,10 +251,10 @@
             </span>
 
             <!-- форма подписки на рассылку -->
-            <section class="subscription">
+            <section class="subscription_inner">
                 <h2 class="visually_hidden">Форма подписки на рассылку</h2>
-                <p class="title_text">Подпишитесь на рассылку</p>
-                <p class="description_text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+                <p class="title_text_subscription title_inner">Подпишитесь на рассылку</p>
+                <p class="description_text description_inner">Только полезная информация и никакого спама, честное бойскаутское!</p>
                 <form clsss="subscription_form" action="https://echo.htmlacademy.ru/courses" method="post">
                   <input type="email" name="Ваш E-mail" placeholder="Ваш E-mail" required>
                   <button class="subscription_button" type="submit">Подписаться</button>
