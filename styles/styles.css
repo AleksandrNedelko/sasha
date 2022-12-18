@@ -151,3 +151,10 @@ footer {
   text-decoration: none;
   color: #000000;
 }
+
+.catalog-products {
+  background-color: #82B3D3;
+  background-image: url("../images/background-filter.jfif");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+}
