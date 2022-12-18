@@ -62,6 +62,14 @@ button {
   text-decoration: none;
 }
 
+.want-link {
+  font-size: 16px;
+  line-height: 20px;
+  background-color: #756157;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
 .main_index {
   background-color: #9c9797;
 }
