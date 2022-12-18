@@ -36,6 +36,10 @@ body {
   width: 1200px;
 }
 
+main {
+  background-color: #FFFFFF;
+}
+
 button {
   font-family: inherit;
   font-size: 20px;
@@ -140,10 +144,6 @@ button {
   text-transform: uppercase;
 }
 
-footer {
-  background-color:  #FFFFFF;
-}
-
 .contacts_phone {
   font-size: 40px;
   line-height: 40px;
@@ -154,7 +154,28 @@ footer {
 
 .catalog-products {
   background-color: #82B3D3;
-  background-image: url("../images/background-filter.jfif");
+  /* background-image: url("../images/background-filter.jfif"); */
   background-size: 100% auto;
   background-repeat: no-repeat;
+}
+
+.hotel-cards {
+  background-color: #FFFFFF;
+}
+
+.inner_header {
+  color: #FFFFFF;
+  background-color: #82B3D3;
+}
+
+
+.breadcrumbs-link {
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+
+}
+
+.main-inner {
+  background-color: #82B3D3;
 }
