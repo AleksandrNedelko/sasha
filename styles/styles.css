@@ -406,11 +406,20 @@ footer {
 }
 
 .pagination-block {
-  width: 400px;
+  display: flex;
+  justify-content: space-between;
+  width: 1060px;
 }
 
 .pagination {
   display: flex;
+  margin: 0;
+  padding-left: 0;
+}
+
+.number-of-cards {
+  display: flex;
+  
 }
 
 .subscription_inner {

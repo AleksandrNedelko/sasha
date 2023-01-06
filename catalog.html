@@ -223,9 +223,9 @@
                         </a>
                     </li>
                 </ul>
-                
+
                 <!-- Пагинация -->
-                <dev class="pagination-block">
+                <div class="pagination-block">
                     <ul class="pagination">
                         <li class="paginaton-item">
                             <a class="pagination-link first-link" href="#">1</a>
@@ -246,18 +246,20 @@
                             <a class="pagination-link" href="#">10</a>
                         </li>
                     </ul>
-                </dev>
+               
+                    <span class="number-of-cards">
+                        <p>Гостиниц на странице:</p>
+                        <select class="select-control" aria-label="Количество гостиниц на странице">
+                            <option value="cheap">1</option>
+                            <option value="expensive">2</option>
+                            <option value="premium class">3</option>
+                            <option value="premium class">4</option>
+                            <option value="premium class">5</option>
+                        </select>
+                    </span>
+                </div>
             </section>
-            <span class="number-of-cards">
-                <p>Гостиниц на странице:</p>
-                <select class="select-control" aria-label="Количество гостиниц на странице">
-                    <option value="cheap">1</option>
-                    <option value="expensive">2</option>
-                    <option value="premium class">3</option>
-                    <option value="premium class">4</option>
-                    <option value="premium class">5</option>
-                </select>
-            </span>
+            
 
             <!-- форма подписки на рассылку -->
             <section class="subscription_inner">
