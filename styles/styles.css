@@ -63,6 +63,7 @@ button {
   text-align: center;
 }
 
+/* шапка сайта */
 .navigation {
   width: 100%;
   margin: 0 auto;
@@ -80,6 +81,7 @@ button {
 }
 
 .navigation-list {
+  display: flex;
   padding: 0;
   margin: 0;
   width: 390px;
@@ -87,6 +89,7 @@ button {
 }
 
 .navigation-user {
+  display: flex;
   padding: 0;
   margin: 0;
   width: 264px;
@@ -109,6 +112,7 @@ button {
   text-transform: uppercase;
 }
 
+/* основной контент */
 .main_index {
   background-color: #9c9797;
 }
@@ -259,6 +263,7 @@ footer {
 }
 
 .inner-header-title {
+  margin-top: 0;
   font-size: 60px;
   line-height: 78px;
 }
@@ -399,10 +404,6 @@ footer {
 .first-link {
   color:#000000;
   background-color: #F2F2F2;
-}
-
-.select-control {
-  font-size: 
 }
 
 .pagination-block {
