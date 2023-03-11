@@ -172,7 +172,7 @@ button {
 .services_item {
   display: flex;
   flex-direction: column;
-  width: 400px; 
+  width: 400px;
 }
 
 
@@ -340,11 +340,8 @@ footer {
 }
 
 .product-list {
-  display: flex;
-  justify-content: space-between;
-  width: 1060px;
-  flex-wrap: wrap;
-  padding-left: 0;
+  display: grid;
+  grid-template-columns: 350px 350px 350px;
 }
 
 .product-card {
@@ -421,7 +418,7 @@ footer {
 
 .number-of-cards {
   display: flex;
-  
+
 }
 
 .subscription_inner {
