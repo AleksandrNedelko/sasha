@@ -341,6 +341,7 @@ footer {
 
 .product-list {
   display: grid;
+  gap: 10px;
   grid-template-columns: 350px 350px 350px;
 }
 
