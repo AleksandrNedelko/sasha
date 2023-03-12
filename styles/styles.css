@@ -291,8 +291,12 @@ footer {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 1060px;
+  /*width: 1200px;*/
   background-color: #FFFFFF;
+}
+
+.hotel-cards-wrapper {
+  width: 1200px;
 }
 
 .breadcrumbs-link {
@@ -339,14 +343,26 @@ footer {
   font-size: 18px;
 }
 
-.product-list {
-  display: grid;
-  gap: 10px;
-  grid-template-columns: 350px 350px 350px;
+.card {
+  width: 340px;
 }
 
-.product-card {
-  width: 340px;
+.product-list {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 340px 340px 340px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  width: 1060px;
+}
+
+.product-card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 300px;
+
 }
 
 .product-card-title {
@@ -357,6 +373,13 @@ footer {
 .product-card-link {
   text-decoration: none;
   color: #000000;
+  /*align-content: center;*/
+  width: 300px;
+}
+
+.product-card-image {
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .product-card-price {
@@ -369,6 +392,7 @@ footer {
   line-height: 20px;
   text-align: center;
   text-decoration: none;
+  width: 140px;
 }
 
 .detailed {
