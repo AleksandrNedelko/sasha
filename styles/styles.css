@@ -344,7 +344,9 @@ footer {
 }
 
 .card {
+  display: flex;
   width: 340px;
+  flex-grow: 1;
 }
 
 .product-list {
@@ -362,9 +364,19 @@ footer {
   flex-direction: column;
   padding: 20px;
   width: 300px;
-
+  /*flex-grow: 1;*/
 }
 
+.card-text {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+.card-button {
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+}
 .product-card-title {
   font-size: 24px;
   line-height: 28px;
