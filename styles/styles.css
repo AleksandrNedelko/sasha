@@ -342,7 +342,7 @@ footer {
   font-family: "PT-Sans", sans-serif;
   font-size: 18px;
 }
-
+/* карточка товара */
 .card {
   display: flex;
   width: 340px;
@@ -427,6 +427,7 @@ footer {
   text-transform: uppercase;
 }
 
+/* Пагинация */
 .pagination-link {
   font-size: 20px;
   line-height: 36px;
@@ -436,21 +437,29 @@ footer {
   background-color: #82B3D3;
 }
 
+.paginaton-item {
+  display: block;
+  list-style-type: none;
+  text-align: center;
+  
+}
+
 .first-link {
   color:#000000;
   background-color: #F2F2F2;
 }
 
-.pagination-block {
-  display: flex;
-  justify-content: space-between;
-  width: 1060px;
+.pagination {
+  display: grid;
+  grid-template-columns: 60px 60px 60px 60px 60px 60px;
+  grid-template-rows: 60px;
 }
 
-.pagination {
+.pagination-block {
   display: flex;
-  margin: 0;
-  padding-left: 0;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1060px;
 }
 
 .number-of-cards {
@@ -458,6 +467,7 @@ footer {
 
 }
 
+/* Форма подписи */
 .subscription_inner {
   background-color: #FFFFFF;
   text-align: center;
