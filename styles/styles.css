@@ -64,6 +64,13 @@ button {
 }
 
 /* шапка сайта */
+
+.navigation-logo{
+  display: block;
+  margin-left: 70px;
+  z-index: 1;
+}
+
 .navigation {
   width: 100%;
   margin: 0 auto;
@@ -72,13 +79,14 @@ button {
 
 .navigation-menu {
   display: flex;
-  width: 1060px;
+  width: 1200px;
   margin: 0 auto;
+
 }
 
-.navigation-logo {
+/*.navigation-logo {
   margin-right: 30px;
-}
+}*/
 
 .navigation-list {
   display: flex;
@@ -86,6 +94,7 @@ button {
   margin: 0;
   width: 390px;
   margin-right: auto;
+  margin-left: 239px;
 }
 
 .navigation-user {
@@ -441,7 +450,7 @@ footer {
   display: block;
   list-style-type: none;
   text-align: center;
-  
+
 }
 
 .first-link {
