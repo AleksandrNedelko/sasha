@@ -68,10 +68,13 @@ button {
 .navigation-logo{
   display: block;
   margin-left: 70px;
+  width: 139px;
+  margin-bottom: -10px;
   z-index: 1;
 }
 
 .navigation {
+  display: flex;
   width: 100%;
   margin: 0 auto;
   background-color: #FFFFFF;
@@ -90,11 +93,13 @@ button {
 
 .navigation-list {
   display: flex;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   width: 390px;
   margin-right: auto;
-  margin-left: 239px;
+  margin-left: 39px;
+  align-items: center;
 }
 
 .navigation-user {
@@ -104,7 +109,17 @@ button {
   width: 264px;
 }
 
-.navigation-link {
+.navigation-item {
+  align-items: center;
+  margin-right: 34px;
+  list-style-type: none;
+}
+.navigation-item:last-child {
+  margin-right: 0;
+}
+
+.navigation-link{
+  display: block;
   color: #000000;
   font-size: 20px;
   line-height: 26px;
