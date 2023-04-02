@@ -98,6 +98,7 @@ button {
   align-items: center;
 }
 
+/* меню пользователя */
 .navigation-user {
   display: flex;
   flex-wrap: nowrap;
@@ -111,12 +112,15 @@ button {
   align-items: center;
   margin-right: 34px;
   list-style-type: none;
+  /*padding: 12px 24px;*/
 }
+
 .navigation-item:last-child {
   margin-right: 0;
 }
 
 .navigation-link{
+  /*position: relative;*/
   display: block;
   color: #000000;
   font-size: 20px;
@@ -124,11 +128,23 @@ button {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
+
+}
+
+.navigation-icon {
+  /*position: absolute;*/
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  fill: #000000;
 }
 
 .want-link {
   font-size: 16px;
   line-height: 20px;
+  padding: 8px 16px;
   background-color: #756157;
   color: #FFFFFF;
   text-transform: uppercase;
@@ -303,7 +319,18 @@ button {
 }
 
 /* Форма подписи */
+.form {
+  width: 800px;
+}
+
+.subscription_form {
+  display: flex;
+  width: 800px;
+}
+
  .subscription {
+  display: flex;
+  flex-direction: column;
   background-color: #82B3D3;
   background-image: url("../images/shape-background.jpg");
   background-size: 100% auto;
@@ -362,11 +389,30 @@ footer {
 
 .footer_social_item {
   display: block;
-  align-items: center;
+  /*align-items: center;*/
+  width: 48px;
+  height: 40px;
+
 }
 
 .footer_social_link {
-  margin: 13px 12px;
+  display: block;
+  background-color: #FFFFFF;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 24px 17px;
+}
+
+.footer_social_vk{
+  background-image: url("images/vk.svg");
+}
+
+.footer_social_tg{
+  background-image: url("images/tg.svg");
+}
+
+.footer_social_youtube{
+  background-image: url("images/youtube.svg");
 }
 
 .social {
