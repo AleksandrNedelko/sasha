@@ -148,6 +148,7 @@ button {
   background-color: #756157;
   color: #FFFFFF;
   text-transform: uppercase;
+  border-radius: 4px;
 }
 
 /* основной контент */
@@ -382,41 +383,33 @@ footer {
 
 .footer_social_list {
   display: flex;
+  flex-wrap: wrap;
   list-style-type: none;
   margin: 0;
   padding-left: 0;
 }
 
 .footer_social_item {
-  display: block;
-  /*align-items: center;*/
+  align-items: center;
   width: 48px;
   height: 40px;
-
 }
 
 .footer_social_link {
   display: block;
+  width: 24px;
+  height: 18px;
+  padding: 12px;
   background-color: #FFFFFF;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 24px 17px;
+  align-content: center;
 }
 
-.footer_social_vk{
+.vk {
   background-image: url("images/vk.svg");
 }
 
-.footer_social_tg{
-  background-image: url("images/tg.svg");
-}
-
-.footer_social_youtube{
-  background-image: url("images/youtube.svg");
-}
-
 .social {
-  max-width: 142px;
+  max-width: 144px;
 }
 
 .footer_contacts {
@@ -435,13 +428,27 @@ footer {
 
 .inner-header-title {
   margin-top: 0;
+  margin-bottom: 10px;
   font-size: 60px;
   line-height: 78px;
 }
 
+.breadcrumbs_block {
+  margin-bottom: 40px;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: 0;
+  padding: 0;
+}
+
 .filter-block {
   width: 1060px;
-  margin: 0 auto;
+  margin: 35px auto 70px auto;
+
 }
 
 .catalog-products {
@@ -451,6 +458,8 @@ footer {
   background-repeat: no-repeat;
   color: #FFFFFF;
   font-weight: 700;
+  border: 1px solid rgba(0,0,0,0);
+  background-clip: padding-box;
 }
 
 .catalog-filter {
@@ -461,12 +470,13 @@ footer {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  /*width: 1200px;*/
   background-color: #FFFFFF;
 }
 
 .hotel-cards-wrapper {
-  width: 1200px;
+  display: flex;
+  width: 1060px;
+  margin: 50px auto 56px;
 }
 
 .breadcrumbs-link {
@@ -501,17 +511,51 @@ footer {
   text-align: center;
 }
 
+/* панель сортировки */
 .number_of_hotels {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
   text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-right: 191px;
+}
+
+.grid_toggle_wrapper {
+  display: flex;
+  width: 170px;
+  height: 48px;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.card_grid_toggle {
+  padding: 14px 15px;
+  margin-right: 8px;
+  border: 2px solid #000000;
+  border-radius: 4px;
+  width: 16px;
+  height: 14px;
+
+}
+
+.card_grid_toggle:last-child {
+margin-right: 0;
 }
 
 .select-control {
+  display: block;
   font-family: "PT-Sans", sans-serif;
   font-size: 18px;
+  margin-right: 78px;
 }
+
+.sorting_container {
+  margin-right: auto;
+}
+
 /* карточка товара */
 .card {
   display: flex;
