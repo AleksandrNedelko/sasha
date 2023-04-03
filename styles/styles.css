@@ -134,16 +134,12 @@ button {
 }
 
 .navigation-link:hover {
-  position: absolute;
-  position: absolute;
-  width: 68px;
-  height: 0px;
-  left: 256px;
-  top: 65px;
+  display: inline;
+  border-bottom: 2px solid #756257;
+  padding-bottom: 20px;
 }
 
 .navigation-icon {
-  /*position: absolute;*/
   top: 0;
   right: 0;
   bottom: 0;
@@ -152,7 +148,11 @@ button {
   fill: #000000;
 }
 
-.want-link {
+.button {
+  display: inline-block;
+  box-sizing: border-box;
+  border: none;
+  text-align: center;
   font-size: 16px;
   line-height: 20px;
   padding: 8px 16px;
@@ -160,7 +160,22 @@ button {
   color: #FFFFFF;
   text-transform: uppercase;
   border-radius: 4px;
+  cursor: pointer;
+  text-decoration: none;
 }
+
+.want-link:hover {
+  background-color: #615048;
+}
+
+.want-link:focus {
+  background-color: #615048;
+}
+
+.want-link:focus {
+  background-color: #615048;
+}
+
 
 /* основной контент */
 .main_index {
