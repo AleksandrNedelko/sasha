@@ -54,6 +54,9 @@ main {
 .main-container {
   flex-grow: 1;
 }
+.main-inner {
+  flex-grow: 1;
+}
 
 button {
   font-family: inherit;
@@ -128,7 +131,15 @@ button {
   font-weight: 700;
   text-align: center;
   text-decoration: none;
+}
 
+.navigation-link:hover {
+  position: absolute;
+  position: absolute;
+  width: 68px;
+  height: 0px;
+  left: 256px;
+  top: 65px;
 }
 
 .navigation-icon {
