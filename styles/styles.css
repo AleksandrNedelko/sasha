@@ -168,14 +168,15 @@ button {
   background-color: #615048;
 }
 
-.want-link:focus {
+.want-link:focus-visible {
   background-color: #615048;
 }
 
-.want-link:focus {
-  background-color: #615048;
+.want-link:active {
+  background-color: #756157;
+  color:rgba(255, 255, 255, 0.3);
+  cursor: default;
 }
-
 
 /* основной контент */
 .main_index {
@@ -499,6 +500,16 @@ footer {
   background-color: #FFFFFF;
 }
 
+.hotel-cards::after {
+  content:'';
+  position: relative;
+  bottom: 115px;
+  left: 72px;
+  width: 1055px;
+  border-bottom: 1px solid #E6E6E6;
+  transform: rotate(180deg);
+}
+
 .hotel-cards-wrapper {
   display: flex;
   width: 1060px;
@@ -523,11 +534,30 @@ footer {
   font-weight: 400;
 }
 
-.button {
+.button_accept {
+  width: 160px;
+  height: 48px;
+  border: none;
+  border-radius: 4px;
   font-size: 16px;
   line-height: 20px;
   font-weight: 700;
   text-align: center;
+  background-color: #82B3D3;
+  cursor: pointer;
+}
+
+.button_accept:hover {
+  background-color:#68A2CA;
+}
+
+.button_accept:focus-visible {
+  background-color:#68A2CA;
+}
+
+.button_accept:active {
+  background-color:#82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .reset-links {
@@ -535,7 +565,22 @@ footer {
   line-height: 20px;
   font-weight: 400;
   text-align: center;
+  cursor: pointer;
 }
+
+.reset-links:hover {
+  vertical-align: center;
+
+  opacity: 0.6;
+}
+.reset-links:active {
+  opacity: 0.6;
+}
+.reset-links:hover {
+  opacity: 0.6;
+}
+
+
 
 /* панель сортировки */
 .number_of_hotels {
@@ -612,11 +657,13 @@ margin-right: 0;
   flex-direction: column;
   flex-grow: 1;
 }
+
 .card-button {
   display: flex;
   flex-direction: column;
   margin-top: auto;
 }
+
 .product-card-title {
   font-size: 24px;
   line-height: 28px;
@@ -668,6 +715,22 @@ margin-right: 0;
 }
 
 /* Пагинация */
+.pagination {
+  display: grid;
+  width: 400px;
+  grid-template-columns: 68px 68px 68px 68px 68px 60px;
+  grid-template-rows: 60px;
+  row-gap: 8px;
+  margin: 0;
+  padding-left: 0;
+}
+
+.paginaton-item {
+  display: block;
+  list-style-type: none;
+  text-align: center;
+}
+
 .pagination-link {
   display: block;
   width: 60px;
@@ -687,25 +750,31 @@ margin-right: 0;
   padding: 12px 18px;
 }
 
-.paginaton-item {
-  display: block;
-  list-style-type: none;
-  text-align: center;
-}
+.pagination-link:hover {
+  background-color: #68A2CA;
+ }
+
+.pagination-link:focus-visible {
+  background-color: #68A2CA;
+ }
+
+.pagination-link:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+ }
 
 .first-link {
   color:#000000;
   background-color: #F2F2F2;
 }
+.first-link:hover {
+  color:#000000;
+  background-color: #F2F2F2;
+}
 
-.pagination {
-  display: grid;
-  width: 400px;
-  grid-template-columns: 68px 68px 68px 68px 68px 60px;
-  grid-template-rows: 60px;
-  row-gap: 8px;
-  margin: 0;
-  padding-left: 0;
+.first-link:active {
+  color:#000000;
+  background-color: #F2F2F2;
 }
 
 .pagination-block {
