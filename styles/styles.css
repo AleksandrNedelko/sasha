@@ -460,6 +460,7 @@ footer {
   line-height: 78px;
 }
 
+/* хлебные крошки */
 .breadcrumbs_block {
   margin-bottom: 40px;
 }
@@ -472,10 +473,37 @@ footer {
   padding: 0;
 }
 
+.breadcrumbs-item {
+  list-style-type: none;
+  margin-right: 10px;
+
+}
+
+.breadcrumbs-link {
+  /*display: block;*/
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.breadcrumbs-item:last-child {
+  margin-right: 0;
+}
+
+.navigation_arrow {
+  /*display: block;*/
+  padding: 0 auto;
+  width: 7px;
+  height: 8px;
+  margin-right: 1px;
+  align-items: center;
+}
+
 .filter-block {
   width: 1060px;
   margin: 35px auto 70px auto;
-
 }
 
 .catalog-products {
@@ -516,13 +544,6 @@ footer {
   margin: 50px auto 56px;
 }
 
-.breadcrumbs-link {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 21px;
-  color: #FFFFFF;
-}
-
 .catalog-filter-title {
   font-size: 20px;
   line-height: 26px;
@@ -553,7 +574,7 @@ footer {
 
 .button_accept:focus-visible {
   background-color:#68A2CA;
-}
+  }
 
 .button_accept:active {
   background-color:#82B3D3;
@@ -569,18 +590,15 @@ footer {
 }
 
 .reset-links:hover {
-  vertical-align: center;
-
   opacity: 0.6;
+}
+
+.reset-links:focus-visible {
+  border: 3px solid #83B3D3;
 }
 .reset-links:active {
-  opacity: 0.6;
+  opacity: 0.3;
 }
-.reset-links:hover {
-  opacity: 0.6;
-}
-
-
 
 /* панель сортировки */
 .number_of_hotels {
@@ -614,6 +632,18 @@ footer {
 
 .card_grid_toggle:last-child {
 margin-right: 0;
+}
+
+.card_grid_toggle:hover {
+  border: 2px solid #000000;
+}
+
+.card_grid_toggle:focus-visible {
+  border: 2px solid #68A2CA;
+}
+
+.card_grid_toggle:active {
+  border: 2px solid #000000;
 }
 
 .select-control {
@@ -807,6 +837,19 @@ margin-right: 0;
 .subscription_button {
   background-color: #82B3D3;
   color: #FFFFFF;
+}
+
+.subscription_button:hover {
+  background-color:#68A2CA;
+}
+
+.subscription_button:focus-visible {
+  background-color:#68A2CA;
+  }
+
+.subscription_button:active {
+  background-color:#82B3D3;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .title_inner {
