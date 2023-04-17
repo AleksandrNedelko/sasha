@@ -730,11 +730,44 @@ margin-right: 0;
   text-transform: uppercase;
 }
 
+.detailed:hover {
+  background-color:#615048;
+}
+
+.detailed:focus-visible {
+  background-color:#615048;
+  }
+
+.detailed:active {
+  background-color:#756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+
 .favourites {
   background-color: #82B3D3;
   color: #FFFFFF;
   text-transform: uppercase;
 }
+
+.favourites:hover {
+  background-color:#68A2CA;
+}
+
+.favourites:focus-visible {
+  background-color:#68A2CA;
+  }
+
+.favourites:active {
+  background-color:#82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.card:nth-child(2) .favourites {
+  background-color:#7DB54F;
+  color: #ffffff;
+}
+
 
 .product-rating {
   font-size: 16px;
@@ -742,6 +775,11 @@ margin-right: 0;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.product-rating{
+  width: 140px;
+  background-color: #F2F2F2;
 }
 
 /* Пагинация */
