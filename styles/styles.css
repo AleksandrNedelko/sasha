@@ -529,6 +529,14 @@ footer {
   display: flex;
 }
 
+.catalog_filter_wrapper {
+  display: flex;
+}
+
+.filter_wrapper {
+  display: flex;
+}
+
 .hotel-cards {
   display: flex;
   flex-direction: column;
