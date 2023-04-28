@@ -162,9 +162,22 @@
                 </ul>
               </fieldset>
             </form>
-            <form class="filter_wrapper">
+            <form>
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимость, ₽:</legend>
+
+                <div class="range">
+                  <div class="range_scale">
+                    <div class="range_bar">
+                      <button class="range_toggle toggle_min">
+                        <span class="visually_hidden">Изменить минимальную цену</span>
+                      </button>
+                      <button class="range_toggle toggle_max">
+                        <span class="visually_hidden">Изменить максимальную цену</span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
               </fieldset>
               <div class="button-block">
                 <button class="button_accept" type="submit">Применить</button>
@@ -172,7 +185,6 @@
               </div>
 
             </form>
-          </div>
           </section>
         </section>
       </head>
