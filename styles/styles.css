@@ -541,6 +541,10 @@ footer {
   display: flex;
 }
 
+.catalog_filter_label {
+  font-weight: 400;
+}
+
 .hotel-cards {
   display: flex;
   flex-direction: column;
