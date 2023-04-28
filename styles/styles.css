@@ -542,6 +542,10 @@ footer {
   flex-direction: column;
 }
 
+.range_wrapper_inputs {
+  display: flex;
+}
+
 .catalog_filter_label {
   position: absolute;
   right: 14px;
@@ -553,6 +557,10 @@ footer {
 .min,
 .max {
   position: relative;
+}
+
+.max {
+  margin-left: -2px;
 }
 
 .range_input {
@@ -567,11 +575,6 @@ footer {
 }
 .max_input {
   border-radius: 0 4px 4px 0;
-}
-
-.range_wrapper_inputs {
-  /*position: relative;*/
-  display: flex;
 }
 
 .hotel-cards {
