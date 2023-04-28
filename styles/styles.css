@@ -533,6 +533,10 @@ footer {
   display: flex;
 }
 
+.filter_form {
+  display: flex;
+}
+
 .range {
   display: flex;
 }
