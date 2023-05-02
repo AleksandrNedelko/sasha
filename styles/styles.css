@@ -542,6 +542,37 @@ footer {
   flex-direction: column;
 }
 
+.range_scale {
+  position: relative;
+  height: 4px;
+  margin-top: 32px;
+  background-color: #fff;
+  opacity: 0.3;
+  /*border-radius: 2px;*/
+}
+
+.range_bar {
+  position: absolute;
+  height: 2px;
+  background-color: #fff;
+  border: 4px solid #FFFFFF;
+
+}
+
+.range_input {
+  width: 144px;
+  background-color:rgba(255, 255, 255, 0);
+  border: 2px solid #FFFFFF;
+  color: #fff;
+}
+
+.range_input {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 14px 14px 14px 18px;
+}
+
 .range_wrapper_inputs {
   display: flex;
 }
@@ -549,6 +580,7 @@ footer {
 .catalog_filter_label {
   position: absolute;
   right: 14px;
+  top: 14px;
   font-weight: 400;
   color: #fff;
   opacity: 0.3;
@@ -562,18 +594,6 @@ footer {
 
 .max {
   margin-left: -2px;
-}
-
-.range_input {
-  width: 144px;
-  background-color:rgba(255, 255, 255, 0);
-  border: 2px solid #FFFFFF;
-  color: #fff;
-}
-
-.min_input,
-.max_input {
-  padding: 14px 14px 14px 18px;
 }
 
 .min_input {
