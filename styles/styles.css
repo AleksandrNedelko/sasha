@@ -554,6 +554,7 @@ footer {
   opacity: 0.3;
 }
 
+
 .min,
 .max {
   position: relative;
@@ -568,6 +569,11 @@ footer {
   background-color:rgba(255, 255, 255, 0);
   border: 2px solid #FFFFFF;
   color: #fff;
+}
+
+.min_input,
+.max_input {
+  padding: 14px 14px 14px 18px;
 }
 
 .min_input {
