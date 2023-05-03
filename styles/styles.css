@@ -535,6 +535,7 @@ footer {
 
 .filter_form {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .range {
@@ -546,54 +547,90 @@ footer {
   position: relative;
   height: 4px;
   margin-top: 32px;
-  background-color: #fff;
-  opacity: 0.3;
-  /*border-radius: 2px;*/
+  background-color: rgba(255,255,255,0.3);
 }
 
 .range_bar {
   position: absolute;
-  height: 2px;
-  background-color: #fff;
-  border: 4px solid #FFFFFF;
-
+  height: 4px;
+  background-color: rgba(255,255,255,1);
 }
 
-.range_input {
-  width: 144px;
-  background-color:rgba(255, 255, 255, 0);
-  border: 2px solid #FFFFFF;
-  color: #fff;
+.range_toggle {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border: none;
+  border-radius: 5px;
 }
 
-.range_input {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  padding: 14px 14px 14px 18px;
+.range_toggle:hover {
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.range_toggle:focus-visible {
+  border: 3px solid #83B3D3;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+.range_toggle:active {
+  border: 2px solid #83B3D3;
+  box-shadow: 0px 7px 15px rgba(0, 0, 0, 0.4);
+}
+.toggle_min {
+  top: -8px;
+}
+
+.toggle_max {
+  top: -8px;
+  right: -10px;
 }
 
 .range_wrapper_inputs {
   display: flex;
+  width: 288px;
+  height: 48px
+}
+
+.range_input {
+  background-color:rgba(255, 255, 255, 0);
+  width: 144px;
+  border: 2px solid #FFFFFF;
+  color: #fff;
+  appearance: textfield;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 14px 14px 14px 18px;
+
+}
+
+.range_input::-webkit-outer-spin-button,
+.range_input::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .catalog_filter_label {
   position: absolute;
-  right: 14px;
+  right: 0;
   top: 14px;
   font-weight: 400;
   color: #fff;
   opacity: 0.3;
 }
 
-
 .min,
 .max {
   position: relative;
+  display: block;
+  width: 144px;
+  height: 48px;
 }
 
 .max {
-  margin-left: -2px;
+  margin-left: 0;
+  left: 32px;
 }
 
 .min_input {
@@ -601,6 +638,12 @@ footer {
 }
 .max_input {
   border-radius: 0 4px 4px 0;
+}
+
+.button-block {
+  display: flex;
+  width: 160px;
+  flex-direction: column;
 }
 
 .hotel-cards {
