@@ -533,8 +533,13 @@ footer {
   display: flex;
 }
 
+.group_price {
+  display: flex;
+  flex-direction: row;
+  width: 518px;
+}
+
 .filter_form {
-  /*display: flex;*/
   flex-wrap: wrap;
   width: 518px;
 }
@@ -543,6 +548,8 @@ footer {
   display: flex;
   flex-direction: column;
   width: 288px;
+  padding: 0;
+  margin: 0;
 }
 
 .range_scale {
@@ -646,7 +653,9 @@ footer {
 
 .button-block {
   display: flex;
+  flex-direction: column;
   width: 160px;
+  margin-left: 70px;
   flex-direction: column;
 }
 
@@ -676,6 +685,7 @@ footer {
 .catalog-filter-title {
   font-size: 20px;
   line-height: 26px;
+  padding-left: 0;
 }
 
 .catalog-filter-item {
@@ -687,6 +697,8 @@ footer {
 .button_accept {
   width: 160px;
   height: 48px;
+  padding: 0;
+  margin-bottom: 20px;
   border: none;
   border-radius: 4px;
   font-size: 16px;
