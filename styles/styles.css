@@ -535,7 +535,8 @@ footer {
 
 .group_price {
   display: flex;
-  flex-direction: row;
+  margin-top: 34px;
+  /*flex-direction: row;*/
   width: 518px;
 }
 
@@ -548,8 +549,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 288px;
-  padding: 0;
-  margin: 0;
+  /*margin: 0;*/
 }
 
 .range_scale {
