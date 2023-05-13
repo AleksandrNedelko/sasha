@@ -548,10 +548,22 @@ footer {
   margin-left: 40px;
 }
 
+/* Фильтр Инфп */
 .catalog_filter_live {
   width: 146px;
   margin-left: 70px;
 }
+.control-mark-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
+
+}
+
 
 .catalog_filter_wrapper {
   display: flex;
@@ -567,7 +579,6 @@ footer {
   flex-wrap: wrap;
   width: 518px;
   margin-left: 176px;
-
 }
 
 .control-input {
@@ -719,6 +730,11 @@ footer {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.catalog-filter-item:last-child {
+  margin-bottom: 0;
 }
 
 .button_accept {
