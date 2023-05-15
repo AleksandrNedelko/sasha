@@ -115,7 +115,6 @@ button {
   align-items: center;
   margin-right: 34px;
   list-style-type: none;
-  /*padding: 12px 24px;*/
 }
 
 .navigation-item:last-child {
@@ -488,7 +487,6 @@ footer {
 }
 
 .breadcrumbs-link {
-  /*display: block;*/
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -525,8 +523,62 @@ footer {
   background-clip: padding-box;
 }
 
-.catalog-filter {
+/* Фильтр инфраструктуры */
+.catalog_filter_infrastructure {
   display: flex;
+  width: 150px;
+}
+
+.control {
+  position: relative;
+  display: block;
+}
+
+.control-mark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+}
+
+.control-label {
+  margin-left: 40px;
+}
+
+.control:hover .control-mark {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.control-input:disabled .control-mark {
+  border-color: #242424;
+}
+
+.control-input[type="checkbox"]:checked + .control-mark::after,
+.control-input[type="checkbox"]:checked + .control-mark::before {
+  position: absolute;
+  top: 0;
+  left: 4px;
+  width: 12px;
+  height: 10px;
+  content: url("/images/Vector_check.svg");
+}
+
+/* Фильтр Инфраструктура */
+.catalog_filter_live {
+  width: 146px;
+  margin-left: 70px;
+}
+.control-mark-radio {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border-radius: 50%;
 }
 
 .catalog_filter_wrapper {
@@ -535,21 +587,24 @@ footer {
 
 .group_price {
   display: flex;
-  flex-direction: row;
+  margin-top: 34px;
   width: 518px;
 }
 
 .filter_form {
   flex-wrap: wrap;
   width: 518px;
+  margin-left: 176px;
+}
+
+.control-input {
+  text-decoration: none;
 }
 
 .range {
   display: flex;
   flex-direction: column;
   width: 288px;
-  padding: 0;
-  margin: 0;
 }
 
 .range_scale {
@@ -611,7 +666,6 @@ footer {
   font-size: 18px;
   line-height: 21px;
   padding: 14px 14px 14px 18px;
-
 }
 
 .range_input::-webkit-outer-spin-button,
@@ -692,6 +746,11 @@ footer {
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
+  margin-bottom: 15px;
+}
+
+.catalog-filter-item:last-child {
+  margin-bottom: 0;
 }
 
 .button_accept {

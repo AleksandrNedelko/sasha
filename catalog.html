@@ -89,61 +89,59 @@
           <!-- Блок с фильтрами -->
             <h2 class="visually_hidden">Фильтр выбора параметров жилья</h2>
             <div class="catalog_filter_wrapper">
-            <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+            <form class="catalog_filter_infrastructure" action="https://echo.htmlacademy.ru/" method="get">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Инфраструктура</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="Бассейн" checked />
-                      Бассейн
+                      <input class="visually_hidden control-input" type="checkbox" name="Бассейн" checked/>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="Парковка" checked />
-                      Парковка
+                      <input class="visually_hidden control-input" type="checkbox" name="Парковка" checked/>
+                      <span class="control-mark"></span>
+                      <span class="control-label">Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="Wi-Fi" />
-                      Wi-Fi
+                      <input class="visually_hidden control-input" type="checkbox" name="Wi-Fi" />
+                      <span class="control-mark"></span>
+                      <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
               </fieldset>
+            </form>
 
+              <!-- Фильтр Тип жилья -->
+            <form action="https://echo.htmlacademy.ru/" class="catalog_filter_live" method="get">
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Тип жилья</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input
-                        class="control-input"
-                        type="radio"
-                        name="type of housing"
-                        value="hotel"
-                        checked
-                      />
-                      Гостиница
+                      <input class="visually_hidden control-input" type="radio" name="type of housing" value="hotel" checked/>
+                      <span class="control-mark-radio"></span>
+                      <span class="control-label">Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="type of housing" value="motel"/>
-                      Мотель
+                      <input class="visually_hidden control-input" type="radio" name="type of housing" value="motel"/>
+                      <span class="control-mark-radio"></span>
+                      <span class="control-label">Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input
-                        class="control-input"
-                        type="radio"
-                        name="type of housing"
-                        value="apartments"
-                      />
-                      Апартаменты
+                      <input class="visually_hidden control-input" type="radio" name="type of housing" value="apartments"/>
+                      <span class="control-mark-radio"></span>
+                      <span class="control-label">Апартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -343,7 +341,6 @@
 
         <!-- Пагинация -->
         <div class="pagination-block">
-          <!--<div class="pagination-number">-->
             <ul class="pagination">
               <li class="paginaton-item">
                 <a class="pagination-link first-link" href="#">1</a>
@@ -364,7 +361,6 @@
                 <a class="pagination-link" href="#">10</a>
               </li>
             </ul>
-          <!--</div>-->
 
           <span class="number-of-cards">
             <p>Гостиниц на странице:</p>
