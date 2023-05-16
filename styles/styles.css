@@ -528,6 +528,7 @@ footer {
 .catalog-filter-group {
   padding: 0;
   border: none;
+  width: 150px;
 }
 
 .catalog-filter-list {
@@ -633,6 +634,7 @@ footer {
 
 .catalog_filter_wrapper {
   display: flex;
+  flex-grow: 150px 145px 518px;
 }
 
 .group_price {
@@ -779,7 +781,8 @@ footer {
   transform: rotate(180deg);
 }
 
-.hotel-cards-wrapper {
+.sorting-cards-wrapper {
+  position: relative;
   display: flex;
   width: 1060px;
   margin: 50px auto 56px;
@@ -884,11 +887,19 @@ margin-right: 0;
   border: 2px solid #000000;
 }
 
+
+/* Сортировка */
+
 .select-control {
-  display: block;
+  width: 100%;
+  padding: 14px 20px;
   font-family: "PT-Sans", sans-serif;
   font-size: 18px;
   margin-right: 78px;
+  background-image: url("../images/arrow-select.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  appearance: none;
 }
 
 .sorting_container {
