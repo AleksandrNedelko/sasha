@@ -899,6 +899,8 @@ margin-right: 0;
   background-image: url("../images/arrow-select.svg");
   background-repeat: no-repeat;
   background-position: right 20px center;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
   appearance: none;
 }
 
