@@ -949,6 +949,10 @@ margin-right: 0;
   width: 1060px;
 }
 
+.deactivate-card {
+ opacity: 0.1;
+}
+
 .product-card-content {
   display: flex;
   flex-direction: column;
@@ -1017,7 +1021,6 @@ margin-right: 0;
   background-color:#756157;
   color: rgba(255, 255, 255, 0.3);
 }
-
 
 .favourites {
   background-color: #82B3D3;
@@ -1147,6 +1150,11 @@ margin-right: 0;
   padding: 94px 0;
 }
 
+.input_type_form {
+  border: none;
+  background-color: #F2F2F2;
+}
+
 .subscription_button {
   background-color: #82B3D3;
   color: #FFFFFF;
@@ -1171,4 +1179,31 @@ margin-right: 0;
 
 .description_inner {
   color: #000000;
+}
+
+/* фильтр количества товаров на странице */
+.select_control {
+  width: 160px;
+  font-family: "PT-Sans", sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  padding: 20px 14px;
+  background-image: url("../images/arrow-select.svg");
+  background-repeat: no-repeat;
+  background-position: right 20px center;
+  border: 2px solid #E5E5E5;
+  border-radius: 4px;
+  appearance: none;
+}
+
+.select_control:hover {
+  border: 2px solid #68A2CA;
+}
+
+.select_control:focus-visible {
+  border: 2px solid #68A2CA;
+}
+
+.select_control:active {
+  border: 2px solid #3F5E72;
 }
