@@ -625,6 +625,17 @@ footer {
   background-color: #242424
 }
 
+.control:hover .control-mark-radio {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.control:active .control-mark-radio {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.control-input:disabled .control-mark-radio {
+  border-color: #242424;
+}
 
 /* Label */
 .control-label {
