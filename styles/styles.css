@@ -1153,6 +1153,8 @@ margin-right: 0;
 .input_type_form {
   border: none;
   background-color: #F2F2F2;
+  font-size: 18px;
+  line-height: 21px;
 }
 
 .subscription_button {
@@ -1181,7 +1183,13 @@ margin-right: 0;
   color: #000000;
 }
 
+
 /* фильтр количества товаров на странице */
+
+.quantity-hotels {
+  margin-right: 50px;
+}
+
 .select_control {
   width: 160px;
   font-family: "PT-Sans", sans-serif;
