@@ -431,9 +431,9 @@ footer {
 
 .footer_social_link {
   display: block;
-  width: 24px;
+  width: 21px;
   height: 18px;
-  padding: 12px;
+  padding: 12px 14px;
   background-color: #FFFFFF;
   align-content: center;
 }
@@ -462,6 +462,67 @@ footer {
   font-size: 60px;
   line-height: 78px;
 }
+
+.social-icon-vk {
+  fill: #83B3D3;
+}
+
+.social-icon-vk:hover {
+  fill: #68A2CA;
+}
+
+.social-icon-vk:active {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.social-icon-tg {
+  fill: #83B3D3;
+}
+
+.social-icon-tg:hover {
+  fill: #68A2CA;
+}
+
+.social-icon-tg:active {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.social-icon-yt {
+  fill: #83B3D3;
+}
+
+.social-icon-yt:hover {
+  fill: #68A2CA;
+}
+
+.social-icon-yt:active {
+  fill: rgba(104, 162, 202, 0.3);
+}
+
+.contacts_phone {
+  color: #000000;
+}
+
+.contacts_phone:hover {
+  color: #756157;
+}
+
+.contacts_phone:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+.logo-academy {
+  fill: #000000;
+}
+
+.logo-academy:hover {
+  fill: #756157;
+}
+
+.logo-academy:active {
+  fill: rgba(117, 97, 87, 0.3);
+}
+
 
 /* хлебные крошки */
 .breadcrumbs_block {
