@@ -1024,13 +1024,23 @@ margin-right: 0;
   flex-direction: column;
   padding: 20px;
   width: 300px;
-  /*flex-grow: 1;*/
 }
 
 .card-text {
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+}
+
+.card-grid {
+  display: grid;
+  grid-template-columns: 140px 140px;
+  grid-template-rows: 21px 37px 20px;
+  /*gap: 16px 20px;*/
+}
+
+.product-card-type {
+  grid-area: 1 / 2 / 1 / 2;
 }
 
 .card-button {
