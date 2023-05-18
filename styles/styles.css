@@ -122,7 +122,6 @@ button {
 }
 
 .navigation-link{
-  /*position: relative;*/
   display: block;
   color: #000000;
   font-size: 20px;
@@ -198,7 +197,6 @@ button {
   display: block;
   margin: 0 auto;
   margin-bottom: 26px;
-
 }
 
 .main_information {
@@ -540,8 +538,20 @@ footer {
 .breadcrumbs-item {
   list-style-type: none;
   margin-right: 10px;
-
 }
+
+.breadcrumbs-icon {
+  fill: #ffffff;
+}
+
+.breadcrumbs-icon:hover {
+  fill: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumbs-icon:active {
+  fill: rgba(255, 255, 255, 0.3);
+}
+
 
 .breadcrumbs-link {
   font-weight: 400;
@@ -556,7 +566,6 @@ footer {
 }
 
 .navigation_arrow {
-  /*display: block;*/
   padding: 0 auto;
   width: 7px;
   height: 8px;
