@@ -21,6 +21,13 @@ body {
   flex-grow: 1;
 }
 
+.product-card-content {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 300px;
+}
+
 .product-card-image {
   margin-left: auto;
   margin-right: auto;
@@ -29,7 +36,7 @@ body {
 
 .card-text {
   display: grid;
-  grid-template-rows: 60px 21px 38px 38px;
+  grid-template-rows: 60px 22px 37px 38px;
   grid-template-columns: 140px 140px;
   row-gap: 16px;
   column-gap: 20px;
@@ -37,12 +44,9 @@ body {
 }
 
 .product-card-title {
-
   font-size: 24px;
   line-height: 28px;
-
 }
-
 
 .product-card-link {
   text-decoration: none;
@@ -58,25 +62,20 @@ body {
   grid-row: 2 / 3;
 }
 
-.product-card-content {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  width: 300px;
-}
-
 .product-card-price {
   color: #000000;
   font-weight: 400;
 }
 
 .product-card-button {
-  font-size: 16px;
+  font-size: 15px;
   line-height: 20px;
   padding: 8px 14px;
   text-decoration: none;
   width: 112px;
   text-align: center;
+  align-content: center;
+  border-radius: 4px;
 }
 
 .detailed {
@@ -99,7 +98,6 @@ body {
   color: rgba(255, 255, 255, 0.3);
 }
 
-
 .favourites {
   background-color: #82B3D3;
   color: #FFFFFF;
@@ -113,7 +111,7 @@ body {
 
 .favourites:focus-visible {
   background-color:#68A2CA;
-  }
+}
 
 .favourites:active {
   background-color:#82B3D3;
@@ -125,15 +123,43 @@ body {
   color: #ffffff;
 }
 
+.rating {
+  display: grid;
+  grid-template-rows: 37px;
+  grid-template-columns: 140px 140px;
+  grid-column: 1 / -1;
+  grid-row: 4 / 5;
+  gap: 20px;
+}
+
+.rating-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.star-rating {
+  margin-right: 6px;
+}
+
 .product-rating {
+  display: inline-block;
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  background: #e0dddd;
+  border-radius: 4px;;
+  border-radius: 4px;
+
 }
 
-.product-rating{
-  width: 140px;
-  background-color: #F2F2F2;
+.name {
+  font-size: 15px;
+  margin: 0;
+  width: 100%;
+  padding-top: 9px;
 }
