@@ -1318,3 +1318,143 @@ margin-right: 0;
 .select_control:active {
   border: 2px solid #3F5E72;
 }
+
+/* модальное окно */
+
+.modal_container {
+  position: fixed;
+  display: fixed; /* для включения окна параметр fixed */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal {
+  position: relative;
+  margin: auto;
+  width: 716px;
+  height: 562px;
+  background-color: #fff;
+  background: #FFFFFF;
+  box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
+  border-radius: 30px;
+}
+
+.form_popup {
+  display: grid;
+  position: absolute;
+  top: 62px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 576px;
+  grid-template-rows: repeat(4, 50px);
+  gap: 36px 40px;
+}
+
+.form_group {
+  padding: 0;
+  border: none;
+  margin: 0;
+  display: grid;
+  gap: 37px;
+ }
+
+.title_form {
+  padding: 0;
+  margin-bottom: 62px;
+}
+
+.modal::after {
+/*  Переделать псевдоэлемент на кнопку  */
+  content:"";
+  position: absolute;
+  top: 54px;
+  right: 70px;
+  display: block;
+  width: 54px;
+  height: 54px;
+  border: none;
+  background-color: #F2F2F2;
+  border-radius: 50%;
+/*  прописать путь к крестику */
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+}
+
+.field_group {
+  display: grid;
+  grid-template-columns: 120px 420px;
+  gap: 36px;
+}
+
+.people_wrap {
+  display: grid;
+  grid-template-columns: 290px 230px;
+  gap: 56px;
+}
+
+.people_group {
+  display: flex;
+  align-item: center;
+  border-radius: 4px;
+  width: 288px;
+  height: 50px;
+}
+
+.title_field {
+  display: flex;
+  width: 118px;
+  margin-right: 36px;
+  align-items: center;
+}
+
+.title_field_child {
+  display: flex;
+  align-items: center;
+  width: 80px;
+  margin-right: 18px;
+}
+
+.quantity {
+  display: flex;
+  width: 30px;
+  padding: 0;
+  border: none;
+  background-color: #F2F2F2;
+  text-align: center;
+}
+
+.plus,
+.minus {
+  width: 50px;
+  background-color: #F2F2F2;
+  border: none;
+  padding: 0;
+}
+
+.child_group {
+  display: flex;
+  align-items: center;
+  border-radius: 4px;
+  width: 288px;
+  height: 50px;
+}
+
+.search_button {
+  position: absolute;
+  top: 400px;
+  left: 70px;
+  width: 576px;
+  height: 60px;
+  margin-top: 40px;
+  background: #83B3D3;
+  color: #fff;
+  border-radius: 10px;
+  border: none;
+  /*display: none;*/
+}
+

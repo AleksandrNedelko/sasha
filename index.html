@@ -210,6 +210,46 @@
       </section>
     </div>
   </footer>
+
+  <!-- модальное окно -->
+
+  <div class="modal_container">
+    <div class="modal modal_search">
+
+      <form class="form_popup" action="https://echo.htmlacademy.ru/courses" method="post">
+        <fieldset class="form_group">
+          <legend class="title_form">Поиск гостиницы в Седоне</legend>
+<!--             <button class="modal-close-button">
+              <span class="visually-hidden">Закрыть</span>
+            </button> -->
+          <p class="field_group appointment-form-date">
+              <label for="arrival-date">Дата Заезда:</label>
+              <input id="arrival-date input-label" type="text" name="" placeholder="27 апреля 2020">
+          </p>
+          <p class="field_group appointment_form_date">
+              <label for="date_of_departure">Дата Выезда:</label>
+              <input id="date_of_departure" type="text" name="" placeholder="1 сентября 2021">
+          </p>
+          <div class="people_wrap">
+          <p class="people_group">
+              <label class="title_field" for="date_of_departure">Взрослые:</label>
+              <input class="minus" type="button" value="-">
+              <input class="quantity" id="date_of_departure" type="text" value="2">
+              <input class="plus" type="button" value="+">
+          </p>
+          <p class="child_group">
+              <label class="title_field_child" for="date_of_departure">Дети:</label>
+              <input class="minus" type="button" value="-">
+              <input class="quantity" id="date_of_departure" type="text" value="1">
+              <input class="plus" type="button" value="+">
+          </p>
+          <button class="search_button" type="submit">Найти</button>
+          </div>
+        </fieldset>
+       </form>
+
+    </div>
+  </div>
 </body>
 
 </html>
