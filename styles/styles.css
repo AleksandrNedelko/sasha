@@ -1399,7 +1399,7 @@ margin-right: 0;
 
 .people_group {
   display: flex;
-  align-item: center;
+  align-items: center;
   border-radius: 4px;
   width: 288px;
   height: 50px;
