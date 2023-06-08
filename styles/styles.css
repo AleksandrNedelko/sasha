@@ -1323,59 +1323,40 @@ margin-right: 0;
 
 .modal_container {
   position: fixed;
-  display: fixed; /* для включения окна параметр fixed */
+  display: flex; /* для включения окна параметр fixed */
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 1;
   background-color: rgba(0, 0, 0, 0.8);
 }
 
 .modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  padding: 62px 70px 170px;
   margin: auto;
-  width: 716px;
-  height: 562px;
   background-color: #fff;
   background: #FFFFFF;
   box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
 }
 
-.form_popup {
-  display: grid;
-  position: absolute;
-  top: 62px;
-  left: 50%;
-  transform: translateX(-50%);
+.modal_search {
   width: 576px;
-  grid-template-rows: repeat(4, 50px);
-  gap: 36px 40px;
 }
 
-.form_group {
-  padding: 0;
-  border: none;
-  margin: 0;
-  display: grid;
-  gap: 37px;
- }
+form {
+  display: block;
+}
 
 .title_form {
   padding: 0;
   margin-bottom: 62px;
 }
 
-.modal::after {
-/*  Переделать псевдоэлемент на кнопку  */
-  content:"";
-  position: absolute;
-  top: 54px;
-  right: 70px;
-  display: block;
+.modal-close-button {
+  display: none;
   width: 54px;
   height: 54px;
   border: none;
@@ -1447,9 +1428,9 @@ margin-right: 0;
   height: 50px;
 }
 
-.search_button {
-  position: absolute;
-  top: 400px;
+.search_button_popup {
+  /*position: absolute;*/
+  bottom: 70px;
   left: 70px;
   width: 576px;
   height: 60px;
