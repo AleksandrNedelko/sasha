@@ -1356,7 +1356,11 @@ form {
 }
 
 .modal-close-button {
-  display: none;
+  display: absolute;
+  position: absolute;
+  top: 54px;
+  padding: 0;
+  right: 70px;
   width: 54px;
   height: 54px;
   border: none;
@@ -1373,6 +1377,7 @@ form {
   display: grid;
   grid-template-columns: 120px 420px;
   gap: 36px;
+  margin: 0;
 }
 
 .people_wrap {
@@ -1442,3 +1447,6 @@ form {
   /*display: none;*/
 }
 
+.input-label {
+  padding: 16px 278px 19px;
+}
