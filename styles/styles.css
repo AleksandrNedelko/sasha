@@ -1344,6 +1344,7 @@ margin-right: 0;
 
 .modal_search {
   width: 576px;
+  z-index: 1;
 }
 
 form {
@@ -1378,6 +1379,7 @@ form {
   grid-template-columns: 120px 420px;
   gap: 36px;
   margin: 0;
+
 }
 
 .people_wrap {
@@ -1448,5 +1450,5 @@ form {
 }
 
 .input-label {
-  padding: 16px 278px 19px;
+  padding: 16px 244px 16px 20px;
 }
