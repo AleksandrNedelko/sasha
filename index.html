@@ -338,16 +338,18 @@
 
     <div class="modal_container">
       <div class="modal modal_search">
-        <button class="modal-close-button">
-          <span class="visually_hidden">Закрыть</span>
-        </button>
         <section class="modal_content">
+          <button class="modal-close-button">
+            <span class="visually_hidden">Закрыть</span>
+          </button>
+
           <form
             class="search_form"
             action="https://echo.htmlacademy.ru/courses"
             method="post"
           >
             <h1 class="title_form">Поиск гостиницы в Седоне</h1>
+
             <div class="field_group appointment-form-date">
               <label class="title_field" for="arrival-date">Дата Заезда:</label>
               <input
@@ -358,8 +360,10 @@
                 placeholder="27 апреля 2020"
               />
             </div>
-            <p class="field_group appointment_form_date">
-              <label class="title_field" for="date_of_departure">Дата Выезда:</label>
+            <div class="field_group appointment_form_date">
+              <label class="title_field" for="date_of_departure"
+                >Дата Выезда:</label
+              >
               <input
                 class="input-label"
                 id="date_of_departure"
@@ -367,35 +371,49 @@
                 name=""
                 placeholder="1 сентября 2021"
               />
-            </p>
-            <div class="people_wrap">
-              <p class="people_group">
-                <label class="title_field" for="date_of_departure"
-                  >Взрослые:</label
-                >
-                <input class="minus" type="button" value="-" />
-                <input
-                  class="quantity"
-                  id="date_of_departure"
-                  type="text"
-                  value="2"
-                />
-                <input class="plus" type="button" value="+" />
-              </p>
-              <p class="child_group">
-                <label class="title_field title_field_child" for="date_of_departure"
-                  >Дети:</label
-                >
-                <input class="minus" type="button" value="-" />
-                <input
-                  class="quantity"
-                  id="date_of_departure"
-                  type="text"
-                  value="1"
-                />
-                <input class="plus" type="button" value="+" />
-              </p>
-              <button class="search_button_popup" type="submit">Найти</button>
+            </div>
+            <div class="wrap_people">
+              <div class="people_wrap">
+                <div class="people_group">
+                  <label
+                    class="title_field title_people"
+                    for="date_of_departure"
+                    >Взрослые:</label
+                  >
+                </div>
+                <div class="quantity_people">
+                  <input class="minus minus_people" type="button" value="-" />
+                  <input
+                    class="quantity"
+                    id="date_of_departure"
+                    type="text"
+                    value="2"
+                  />
+                  <input class="plus" type="button" value="+" />
+                </div>
+              </div>
+              <div class="child_wrap">
+                <div class="child_group">
+                  <label
+                    class="title_field title_field_child"
+                    for="date_of_departure"
+                    >Дети:
+                  </label>
+                </div>
+                <div class="quantity_child">
+                  <input class="minus" type="button" value="-" />
+                  <input
+                    class="quantity quantity_child"
+                    id="date_of_departure"
+                    type="text"
+                    value="1"
+                  />
+                  <input class="plus" type="button" value="+" />
+                </div>
+              </div>
+              <div class="search_button_form">
+                <button class="search_button_popup" type="submit">Найти</button>
+              </div>
             </div>
           </form>
         </section>
