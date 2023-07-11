@@ -1310,8 +1310,8 @@ footer {
 
 /* модальное окно */
 .modal_container {
-  position: fixed;
-  display: flex; /* для включения окна параметр fixed */
+  position: absolute;
+  display: none; /* для включения окна параметр flex */
   top: 0;
   left: 0;
   width: 100%;
@@ -1453,7 +1453,7 @@ form {
   justify-content: center;
   width: 25px;
   height: 25px;
-  background-color: #83B3D3;
+  background-color: #83b3d3;
   border-radius: 50%;
 }
 
